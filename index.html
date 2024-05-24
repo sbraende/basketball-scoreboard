@@ -4,26 +4,32 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
-        <section id="scoreboard">
-            <div>
-                <h1 class="scoreboard-titles">HOME</h1>
-                <div class="score-background">
-                    <p class="score" id="home">0</p>
+        <main>
+            <section id="scoreboard">
+                <div>
+                    <h1 class="scoreboard-titles">HOME</h1>
+                    <div class="score-background" id="home-bg">
+                        <p class="score" id="home">0</p>
+                    </div>
+                    <button onclick="updateScore('home', 1)">+1</button>
+                    <button onclick="updateScore('home', 2)">+2</button>
+                    <button onclick="updateScore('home', 3)">+3</button>
                 </div>
-                <button onclick="updateScore('home', 1)">+1</button>
-                <button onclick="updateScore('home', 2)">+2</button>
-                <button onclick="updateScore('home', 3)">+3</button>
-            </div>
-            <div>
-                <h1 class="scoreboard-titles">GUEST</h1>
-                <div class="score-background">
-                    <p class="score" id="guest">0</p>
+                <div>
+                    <h1 class="scoreboard-titles">GUEST</h1>
+                    <div class="score-background" id="guest-bg">
+                        <p class="score" id="guest">0</p>
+                    </div>
+                    <button onclick="updateScore('guest', 1)">+1</button>
+                    <button onclick="updateScore('guest', 2)">+2</button>
+                    <button onclick="updateScore('guest', 3)">+3</button>
                 </div>
-                <button onclick="updateScore('guest', 1)">+1</button>
-                <button onclick="updateScore('guest', 2)">+2</button>
-                <button onclick="updateScore('guest', 3)">+3</button>
-            </div>
-        </section>
+            </section>
+            <section id="util-btns">
+                <button id="reset" onclick="reset()">RESET</button>
+            </section>
+        </main>
+
         <script src="index.js"></script>
     </body>
 </html>
