@@ -10,18 +10,18 @@
                 <div class="score-background">
                     <p class="score" id="home">0</p>
                 </div>
-                <button onclick="homeAddOne()">+1</button>
-                <button onclick="homeAddTwo()">+2</button>
-                <button onclick="homeAddThree()">+3</button>
+                <button onclick="updateScore('home', 1)">+1</button>
+                <button onclick="updateScore('home', 2)">+2</button>
+                <button onclick="updateScore('home', 3)">+3</button>
             </div>
             <div>
                 <h1 class="scoreboard-titles">GUEST</h1>
                 <div class="score-background">
                     <p class="score" id="guest">0</p>
                 </div>
-                <button onclick="guestAddOne()">+1</button>
-                <button onclick="guestAddTwo()">+2</button>
-                <button onclick="guestAddThree()">+3</button>
+                <button onclick="updateScore('guest', 1)">+1</button>
+                <button onclick="updateScore('guest', 2)">+2</button>
+                <button onclick="updateScore('guest', 3)">+3</button>
             </div>
         </section>
         <script src="index.js"></script>
