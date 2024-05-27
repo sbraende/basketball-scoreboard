@@ -12,6 +12,7 @@ body {
 
 #scoreboard {
     max-width: 600px;
+    min-width: 400px;
     margin: 68px auto 0 auto;
     display: flex;
     justify-content: space-around;
