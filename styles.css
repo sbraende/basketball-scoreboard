@@ -27,16 +27,13 @@ body {
     width: 155px;
     height: 120px;
     margin: 21px 0 26px 0;
+    border: 4px solid #1B244A;
     border-radius: 10px;
     background: #080001;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
-/* #home-bg {
-    border: 4px solid #F94F6D;
-} */
 
 .score {
     color: #F94F6D;
