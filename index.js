@@ -7,19 +7,22 @@ let guestBgEl = document.getElementById("guest-bg")
 let clrRed = "4px solid #F94F6D"
 let clrBg = "4px solid #1B244A"
 
-function updateScore(team, score) {
+function score(team, points) {
+    updateScoreboard(team, points)
+    highlightLeader() 
+}
+
+function updateScoreboard(team, points) {
     let teamEl = document.getElementById(team)
     
     if (team == "home") {
-        homeScore += score
+        homeScore += points
         teamEl.textContent = homeScore
     }
     else {
-        guestScore += score
+        guestScore += points
         teamEl.textContent = guestScore    
     }
-
-    highlightLeader() 
 }
 
 function highlightLeader() {
