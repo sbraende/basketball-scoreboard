@@ -5,7 +5,7 @@ let homeBgEl = document.getElementById("home-bg")
 let guestBgEl = document.getElementById("guest-bg")
 
 let clrRed = "4px solid #F94F6D"
-let clrBg = "4px solid #1B244A"
+let clrBg = "4px solid transparent"
 
 function score(team, points) {
     updateScoreboard(team, points)
